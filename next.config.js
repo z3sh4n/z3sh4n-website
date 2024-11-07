@@ -1,10 +1,12 @@
 module.exports = {
     images: {
-      localPatterns: [
-        {
-          pathname: '/gifs/**',
-          search: '',
-        },
-      ],
+      remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media1.tenor.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
     },
   }

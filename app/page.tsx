@@ -1,6 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
-import gif from 'gifs/3.gif'
 
 export default function Page() {
   return (
@@ -9,13 +8,11 @@ export default function Page() {
       abhi me ye Website bana raha hu, thode time baad aana.
       </h1>
       <Image
-      src={gif}
-      alt="Picture of the author"
+      src="https://media1.tenor.com/m/ss-WiQSw9G0AAAAC/mujhse-shaadi-karogi-akshay-kumar-and-salman-khan-tribal-dance.gif"
+      alt="gif"
       sizes="100vw"
-      style={{
-        width: '100%',
-        height: 'auto',
-      }}
+      width={500}
+      height={500}
     />
     </section>
   )
