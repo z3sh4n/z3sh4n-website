@@ -1,21 +1,22 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
+import gif from 'gifs/3.gif'
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      abhi me ye Website bana raha hu, thode time baad aana.
       </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <Image
+      src={gif}
+      alt="Picture of the author"
+      sizes="100vw"
+      style={{
+        width: '100%',
+        height: 'auto',
+      }}
+    />
     </section>
   )
 }
