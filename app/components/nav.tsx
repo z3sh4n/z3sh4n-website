@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import HyperText from './hyper-text'
 
 const navItems = {
   '/': {
@@ -22,9 +23,9 @@ export function Navbar() {
         >
           <Link
             href="/"
-            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1 font-semibold"
+            className="font-mono font-bold text-2xl"
           >
-            Z3SH4N
+            <HyperText text="ZEESHAN"></HyperText>
           </Link>
           {/* <div className="flex flex-row space-x-0 pr-10">
             {Object.entries(navItems).map(([path, { name }]) => {
