@@ -25,7 +25,7 @@ export function Navbar() {
             href="/"
             className="font-mono font-bold text-2xl"
           >
-            <HyperText text="ZEESHAN"></HyperText>
+            <HyperText text="Z3SH4N"></HyperText>
           </Link>
           {/* <div className="flex flex-row space-x-0 pr-10">
             {Object.entries(navItems).map(([path, { name }]) => {
