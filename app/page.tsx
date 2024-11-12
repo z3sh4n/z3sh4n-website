@@ -1,51 +1,10 @@
-import { BlogPosts } from '@/app/components/posts'
 import Image from 'next/image'
 import { Avatar, AvatarFallback, AvatarImage } from './components/avatar'
 import { HoverEffect } from './components/card-hover-effect';
-import FlutterIcon from './components/language_icons/flutter-icon';
-import NextjsIcon from './components/language_icons/nextjs-icon';
-import PHPIcon from './components/language_icons/php-icon';
-import MYSQLIcon from './components/language_icons/mysql-icon';
-import PythonIcon from './components/language_icons/python-icon';
-import WordpressIcon from './components/language_icons/wordpress-icon';
-import FirebaseIcon from './components/language_icons/firebase-icon';
-import RustIcon from './components/language_icons/rust-icon';
+import { skills } from './components/skills';
 
-export const projects = [
-  {
-    title: "Flutter",
-    logo: <FlutterIcon className="h-12 w-12" fill="white"></FlutterIcon>
-  },
-  {
-    title: "PHP",
-    logo: <PHPIcon className="h-12 w-12" fill="white"></PHPIcon>
-  },
-  {
-    title: "My Sql",
-    logo: <MYSQLIcon className="h-12 w-12" fill="white"></MYSQLIcon>
-  },
-  {
-    title: "Python",
-    logo: <PythonIcon className="h-12 w-12" fill="white"></PythonIcon>
-  },
-  {
-    title: "Firebase",
-    logo: <FirebaseIcon className="h-12 w-12" fill="white"></FirebaseIcon>
-  },
-  {
-    title: "Wordpress",
-    logo: <WordpressIcon className="h-12 w-12" fill="white"></WordpressIcon>
-  },
-  {
-    title: "Rust",
-    logo: <RustIcon className="h-12 w-12" fill="white"></RustIcon>
-  },
-  {
-    title: "Next.js",
-    logo: <NextjsIcon className="h-12 w-12" fill="white"></NextjsIcon>
-  },
-  
-];
+
+
 
 export default function Page() {
   return (
@@ -75,7 +34,7 @@ export default function Page() {
         </div>
         <div>
           <p className="mt-8 text-xl font-semibold">Skills:</p>
-          <HoverEffect items={projects} />
+          <HoverEffect items={skills} />
         </div>
         
       </div>
