@@ -7,6 +7,7 @@
 - [ ] add project section
 - [ ] add Blog section
 - [ ] add contact button
+- [ ] update metadata
 - [ ] fix some UI on mobile
 - [ ] add that avatar type animation
 - [ ] add cv section from that github repo
