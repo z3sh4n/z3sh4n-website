@@ -30,10 +30,14 @@ export const HoverEffect = ({
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
+          <Card>
+            <CardLogo>{item.logo}</CardLogo>
+            <CardTitle>{item.title}</CardTitle>
+          </Card>
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-700/30 z-30"
+                className="absolute inset-0 h-full w-full bg-neutral-700/50 -z-10"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -42,15 +46,12 @@ export const HoverEffect = ({
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
+                  transition: { duration: 0.15 },
                 }}
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardLogo>{item.logo}</CardLogo>
-            <CardTitle>{item.title}</CardTitle>
-          </Card>
+          
         </div>
       ))}
     </div>

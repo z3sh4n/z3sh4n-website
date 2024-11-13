@@ -3,7 +3,7 @@
 - [x] add avatar and that little tag of me and my name
 - [x] add description
 - [x] add skill section
-- [ ] add nav bar
+- [x] add nav bar
 - [ ] add project section
 - [ ] add Blog section
 - [ ] add contact button

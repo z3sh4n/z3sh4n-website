@@ -3,9 +3,6 @@ import { Avatar, AvatarFallback, AvatarImage } from './components/avatar'
 import { HoverEffect } from './components/card-hover-effect';
 import { skills } from './components/skills';
 
-
-
-
 export default function Page() {
   return (
     <section>
