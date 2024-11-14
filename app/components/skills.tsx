@@ -8,25 +8,25 @@ import RustIcon from "./skills_icons/rust-icon";
 import WordpressIcon from "./skills_icons/wordpress-icon";
 
 export const skills = [
+  {
+      title: "PHP",
+      logo: <PHPIcon className="h-12 w-12" fill="white"></PHPIcon>
+    },
     {
       title: "Flutter",
       logo: <FlutterIcon className="h-12 w-12" fill="white"></FlutterIcon>
-    },
-    {
-      title: "PHP",
-      logo: <PHPIcon className="h-12 w-12" fill="white"></PHPIcon>
     },
     {
       title: "My Sql",
       logo: <MYSQLIcon className="h-12 w-12" fill="white"></MYSQLIcon>
     },
     {
-      title: "Python",
-      logo: <PythonIcon className="h-12 w-12" fill="white"></PythonIcon>
-    },
-    {
       title: "Firebase",
       logo: <FirebaseIcon className="h-12 w-12" fill="white"></FirebaseIcon>
+    },
+    {
+      title: "Python",
+      logo: <PythonIcon className="h-12 w-12" fill="white"></PythonIcon>
     },
     {
       title: "Wordpress",

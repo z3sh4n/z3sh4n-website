@@ -4,7 +4,7 @@
 - [x] add description
 - [x] add skill section
 - [x] add nav bar
-- [ ] add project section
+- [x] add project section
 - [ ] add Blog section
 - [ ] add contact button
 - [ ] update metadata

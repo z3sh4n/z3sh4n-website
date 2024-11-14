@@ -19,14 +19,14 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-4",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="group -ml-px -mt-px relative flex aspect-square select-none flex-col items-center justify-center p-4"
+          className="group -ml-px -mt-px relative flex aspect-square select-none flex-col items-center justify-center p-6"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

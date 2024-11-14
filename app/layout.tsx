@@ -1,7 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import localFont from "next/font/local";
 import Footer from "./components/footer"
 import Particles from "./components/particles"
 import BlurFade from "./components/blur-fade"
@@ -33,7 +32,16 @@ export const metadata: Metadata = {
     },
   },
 }
-
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export default function RootLayout({
   children,
@@ -43,15 +51,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${geistMono.variable} ${geistSans.variable}`}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <BlurFade>
-          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          <main className="relative mx-auto mt-6 max-w-xl px-6 ">
+            <div>
             <NavBar />
             {children}
             <Footer />
             <SpeedInsights/>
+            </div>
           </main>
         </BlurFade>
         <Particles className="-z-10 absolute inset-0 hidden sm:block"></Particles>
