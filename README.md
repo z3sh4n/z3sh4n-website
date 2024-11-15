@@ -5,7 +5,7 @@
 - [x] add skill section
 - [x] add nav bar
 - [x] add project section
-- [ ] add Blog section
+- [x] add Blog section
 - [ ] add contact button
 - [ ] update metadata
 - [ ] fix some UI on mobile

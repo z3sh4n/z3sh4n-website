@@ -29,16 +29,12 @@ export default function ProjectCard({
               src={project.imageUrl}
               alt={project.title}
                 layout="fill"
-              // height={200}
-              // width={300}
+              
               style={{
                 objectFit: "contain",
                 objectPosition: "center",
               }
               }
-              // objectFit="cover"
-              // objectPosition ="center"
-              // className="transition-transform duration-300 ease-in-out hover:scale-110"
             />
           </div>
           <CardContent className="p-4">
