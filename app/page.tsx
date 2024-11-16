@@ -36,7 +36,7 @@ export default function Page() {
         <div>
           <p className="text-xl font-semibold ">Skills:</p>
           <HoverEffect items={skills} />
-          <div className='flex flex-wrap gap-2 sm:hidden'>
+          <div className='flex flex-wrap gap-2 sm:hidden mt-2'>
             {skills.map((skill) => (
               <div key={skill.title}>
                 <Badge variant={skill.title.replace(" ", "").toLowerCase() as keyof typeof badgeVariants}> 

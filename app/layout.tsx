@@ -9,13 +9,13 @@ import NavBar from "./components/nav"
 
 export const metadata: Metadata = {
   title: {
-    default: 'Z3SH4N',
+    default: 'Md. Zeeshan',
     template: '%s | Z3SH4N',
   },
-  description: 'This is Zeeshan\'s portfolio.',
+  description: 'This is Md. Zeeshan\'s portfolio.',
   openGraph: {
-    title: 'Zeeshan Porfolio',
-    description: 'This is Zeeshan\'s portfolio.',
+    title: 'Md. Zeeshan Porfolio',
+    description: 'This is Md. Zeeshan\'s portfolio.',
     siteName: 'Z3SH4N',
     locale: 'en_US',
     type: 'website',
@@ -53,6 +53,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistMono.variable} ${geistSans.variable}`}
     >
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="antialiased">
           <main className="relative mx-auto mt-6 max-w-xl px-6 ">
             <div>
