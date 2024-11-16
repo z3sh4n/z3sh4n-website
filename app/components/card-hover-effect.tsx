@@ -85,7 +85,7 @@ export const CardLogo = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("group-hover:-translate-y-1 transition-all duration-300", className)}>
+    <div className={cn("group-hover:-translate-y-2 transition-all duration-300 h-12 w-12", className)}>
       {children}
     </div>
   );

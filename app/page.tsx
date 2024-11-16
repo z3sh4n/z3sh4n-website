@@ -8,6 +8,7 @@ import { BlogPosts3 } from './components/posts';
 import Link from 'next/link';
 import ArrowIcon from './components/arrow-icon';
 import ContactButton from './components/contact-button';
+import { Badge, badgeVariants } from './components/badge';
 
 
 export default function Page() {
@@ -16,11 +17,11 @@ export default function Page() {
       <div className="flex flex-col">
         <div className="mb-6 flex gap-6">
           <Avatar className="h-20 w-20">
-            <AvatarImage src="/avatar/me.png" />
+            <AvatarImage src="/avatar/me.jpg" />
             <AvatarFallback>Z</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
-            <p className="mt-2 text-2xl font-semibold">Hey, I'm Zeeshan 👋</p>
+            <p className="mt-2 text-3xl font-semibold">Hey, I'm Md. Zeeshan 👋</p>
             <ContactButton />
           </div>
         </div>
@@ -35,6 +36,18 @@ export default function Page() {
         <div>
           <p className="text-xl font-semibold ">Skills:</p>
           <HoverEffect items={skills} />
+          <div className='flex flex-wrap gap-2 sm:hidden'>
+            {skills.map((skill) => (
+              <div key={skill.title}>
+                <Badge variant={skill.title.replace(" ", "").toLowerCase() as keyof typeof badgeVariants}> 
+                  <div className="h-4 w-4 mr-2 my-1">
+                    {skill.logo}
+                  </div> 
+                  {skill.title}
+                  </Badge>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="my-12">
           <p className="mb-4 text-xl font-semibold">Projects:</p>

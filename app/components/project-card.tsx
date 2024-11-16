@@ -24,12 +24,11 @@ export default function ProjectCard({
           key={project.title}
           className="max-w-xl hover:scale-105 hover:shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
         >
-          <div className="relative h-48 overflow-hidden">
+          <div className="relative h-48 overflow-hidden" style={{position: "relative"}}>
             <Image
               src={project.imageUrl}
               alt={project.title}
-                layout="fill"
-              
+              fill
               style={{
                 objectFit: "contain",
                 objectPosition: "center",

@@ -10,35 +10,35 @@ import WordpressIcon from "./skills_icons/wordpress-icon";
 export const skills = [
   {
       title: "PHP",
-      logo: <PHPIcon className="h-12 w-12" fill="white"></PHPIcon>
+      logo: <PHPIcon fill="white"></PHPIcon>
     },
     {
       title: "Flutter",
-      logo: <FlutterIcon className="h-12 w-12" fill="white"></FlutterIcon>
+      logo: <FlutterIcon fill="white"></FlutterIcon>
     },
     {
       title: "My Sql",
-      logo: <MYSQLIcon className="h-12 w-12" fill="white"></MYSQLIcon>
+      logo: <MYSQLIcon fill="white"></MYSQLIcon>
     },
     {
       title: "Firebase",
-      logo: <FirebaseIcon className="h-12 w-12" fill="white"></FirebaseIcon>
+      logo: <FirebaseIcon fill="white"></FirebaseIcon>
     },
     {
       title: "Python",
-      logo: <PythonIcon className="h-12 w-12" fill="white"></PythonIcon>
+      logo: <PythonIcon fill="white"></PythonIcon>
     },
     {
       title: "Wordpress",
-      logo: <WordpressIcon className="h-12 w-12" fill="white"></WordpressIcon>
+      logo: <WordpressIcon fill="white"></WordpressIcon>
     },
     {
       title: "Rust",
-      logo: <RustIcon className="h-12 w-12" fill="white"></RustIcon>
+      logo: <RustIcon fill="white"></RustIcon>
     },
     {
       title: "Next.js",
-      logo: <NextjsIcon className="h-12 w-12" fill="white"></NextjsIcon>
+      logo: <NextjsIcon fill="white"></NextjsIcon>
     },
     
   ];

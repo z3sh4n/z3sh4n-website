@@ -12,18 +12,20 @@ const badgeVariants = cva(
           "border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80",
         flutter:
           "border-transparent bg-[#042B59] text-secondary-foreground hover:bg-[#042B59]/80",
-          firebase:
-          "border-transparent bg-[#c46607] text-secondary-foreground hover:bg-[#c46607]/80",
-          php:
-            "border-transparent bg-[#8993be] text-secondary-foreground hover:bg-[#8993be]/80",
+        firebase:
+          "border-transparent bg-[#934c05] text-secondary-foreground hover:bg-[#934c05]/80",
+        php:
+          "border-transparent bg-[#5F6685] text-secondary-foreground hover:bg-[#5F6685]/80",
         wordpress:
           "border-transparent bg-[#245a72] text-secondary-foreground hover:bg-[#245a72]/80",
         mysql:
-          "border-transparent bg-[#00758f] text-secondary-foreground hover:bg-[#00758f]/80",
+          "border-transparent bg-[#005D72] text-secondary-foreground hover:bg-[#005D72]/80",
         rust:
-          "border-transparent bg-[#281C1C] text-secondary-foreground hover:bg-[#281C1C]/80",
+          "border-transparent bg-[#722417] text-secondary-foreground hover:bg-[#722417]/80",
         nextjs:
-          "border-transparent bg-neutral-800 text-secondary-foreground hover:bg-[#00758f]/80",
+          "border-transparent bg-neutral-800 text-secondary-foreground hover:bg-neutral-800/80",
+        python:
+          "border-transparent bg-[#B39429] text-secondary-foreground hover:bg-[#B39429]/80",
         outline: "text-foreground",
       },
     },
@@ -35,7 +37,7 @@ const badgeVariants = cva(
 
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {}
+  VariantProps<typeof badgeVariants> { }
 
 function Badge({ className, variant, ...props }: BadgeProps) {
   return (
