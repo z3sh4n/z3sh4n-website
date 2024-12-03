@@ -44,10 +44,10 @@ export default function ProjectCard({
             </div>
           </CardContent>
           <CardFooter className="p-4 pt-0 flex justify-between">
-            <Link href={project.projectLink}>
+            <Link href={project.projectLink} target="_blank" rel="noopener noreferrer">
               <Button>Visit</Button>
             </Link>
-            <Link href={project.sourceCodeLink}>
+            <Link href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer">
               <Button variant="outline">Source Code</Button>
             </Link>
           </CardFooter>
